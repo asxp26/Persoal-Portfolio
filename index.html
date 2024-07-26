@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/diamond.png" type="image/png" />
+    <title>Anuj's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a3eef256e7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <span class="text first-text">Hello, I'm </span>
+          <span class="text second-text"></span>
+          <h1>
+            Scroll to step into my Digital Realm, where you'll discover more<br />than
+            just a traditional Resume!
+          </h1>
+        </div>
+
+        <script>
+          const text = document.querySelector(".second-text");
+
+          const textLoad = () => {
+            setTimeout(() => {
+              text.textContent = "Anuj Patel";
+            }, 0);
+            setTimeout(() => {
+              text.textContent = "a Software Engineer";
+            }, 2500);
+            setTimeout(() => {
+              text.textContent = "an investor";
+            }, 5000);
+            setTimeout(() => {
+              text.textContent = "an experience seeker";
+            }, 7500);
+            setTimeout(() => {
+              text.textContent = "a New York Giants fan";
+            }, 10000);
+            setTimeout(() => {
+              text.textContent = "a New York Knicks fan";
+            }, 12500);
+            setTimeout(() => {
+              text.textContent = "based in New Jersey";
+            }, 15000);
+          };
+
+          textLoad();
+          setInterval(textLoad, 17500);
+        </script>
+      </div>
+    </div>
+
+    <!---------------------- About Section ---------------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me (feat. Mother 🫅🏽)</h1>
+            <p>
+              Hello, World! My name is Anuj, and I am a highly motivated
+              Computer Science graduate from Rutgers University, School of Arts
+              and Sciences—New Brunswick, with a Bachelor of Science degree in
+              Computer Science!<br /><br />I am skilled in programming languages
+              such as Python, Java, Swift (iOS), C, C++, R, SQL, HTML/CSS, and
+              JavaScript, with a knack for problem-solving. My passion for
+              technology and my dedication to continuous learning drive me to
+              seek experiences in software engineering, machine learning
+              engineering, artificial intelligence, and augmented reality.<br /><br />Throughout
+              my academic journey, I have gained hands-on experience in computer
+              programming, software development, and app development. My
+              coursework and projects (showcased below) have taught me to
+              independently plan and execute tasks, handle competing priorities
+              efficiently, and hold myself accountable to a well-structured
+              schedule.<br /><br />I thrive on learning and growing, fueled by
+              my passion for the tech industry. As I continue my academic
+              journey, I'm eagerly seeking opportunities to apply my skills and
+              contribute to dynamic and forward-thinking teams.<br /><br />If
+              you want to chat or explore potential collaborations, please feel
+              free to contact me below!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experiences
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Software & Programs</span><br />Microsoft Office, Google
+                  Suite, Figma, VS Code, Xcode, Matlab, Git, Bitbucket, IoT,
+                  RESTful API
+                </li>
+                <li>
+                  <span>Frameworks & Libraries</span><br />Express.js, Next.js,
+                  React.js, Spring Boot, Flask, NumPy, Pandas
+                </li>
+                <li>
+                  <span>Cloud & Engineering</span><br />Amazon Web Services
+                  (AWS) Cloud Quest: Cloud Practitioner
+                </li>
+                <li>
+                  <span>Databases & Visualization</span><br />MongoDB, MySQL,
+                  Oracle, Elasticsearch, Perspective
+                </li>
+                <li>
+                  <span>Professional Skills</span><br />Project Management, Team
+                  Leadership, Communication, Self-Discipline, Collaboration,
+                  SDLC, Agile
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>August 2023 - January 2024</span><br />Global Technology
+                  & Design Software Engineering Intern @ Colgate-Palmolive
+                </li>
+                <li>
+                  <span>July 2023 - August 2023</span><br />Season Launch & Data
+                  Hacker @ Major League Hacking
+                </li>
+                <li>
+                  <span>October 2022 - December 2022</span><br />User Interface
+                  & Experience Fellow @ Blueprint
+                </li>
+                <li>
+                  <span>July 2018</span><br />Coding & Development Student @ iD
+                  Tech Camps
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>September 2020 - May 2024</span><br />Rutgers
+                  University, School of Arts and Sciences—New Brunswick
+                </li>
+                <li>
+                  <span>September 2016 - June 2020</span><br />Parsippany High
+                  Scool
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- Services Section ---------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Code Reviews</h2>
+            <p>
+              Unlock the potential of your code with personalized code reviews
+              by a dedicated Computer Science graduate. I offer comprehensive
+              code evaluations designed to enhance your coding skills and
+              strengthen your projects. Whether you're a fellow student seeking
+              guidance or a developer navigating your first projects, I provide
+              constructive feedback, share industry insights, and foster an
+              environment of continuous improvement to help you excel in your
+              coding journey.
+            </p>
+            <a href="#contact">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-window-maximize"></i>
+            <h2>App Development</h2>
+            <p>
+              Elevate your web application development with a Computer Science
+              graduate. From concept to deployment, I offer comprehensive
+              services encompassing web application design, implementation, and
+              optimization. Whether you're a startup needing a robust web
+              presence or an individual seeking a polished personal project, I
+              bring expertise in modern frameworks, user-centric design, and
+              efficient coding practices to bring your vision to life. Let's
+              collaborate to turn your ideas into functional, user-friendly web
+              applications that make an impact.
+            </p>
+            <a href="#contact">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-file-pdf"></i
+            ><i class="fa-solid fa-magnifying-glass"></i>
+            <h2>Resume Reviews</h2>
+            <p>
+              Refine your professional narrative with expert resume reviews
+              tailored for aspiring individuals in the field of computer
+              science. As a recent graduate with a strong foundation in
+              programming, I offer a meticulous analysis of your resume,
+              ensuring it effectively highlights your skills, projects, and
+              academic achievements. Let's work together to craft a compelling
+              resume that stands out in the competitive landscape, showcasing
+              your potential and positioning you for success in the dynamic
+              world of technology.
+            </p>
+            <a href="#contact">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- My Interests Section ---------------------->
+
+    <div id="interests">
+      <div class="container">
+        <h1 class="sub-title">My Interests</h1>
+        <div class="work-list0">
+          <div class="work0">
+            <img src="images/views.png" />
+            <div class="layer0">
+              <h3>Sightseeing <i class="fa-solid fa-binoculars"></i></h3>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> SUMMIT One Vanderbilt
+                Observation Deck, New York City<br /><br />I took this picture
+                back in December of 2023 from the top of the observation deck,
+                looking down into the city! Walking around through the different
+                levels that SUMMIT One had to offer was mesmerizing and
+                inspiring!
+              </p>
+              <a href="https://www.instagram.com/anujpxtel.13/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work0">
+            <img src="images/nyg.png" />
+            <div class="layer0">
+              <h3>Football <i class="fa-solid fa-football"></i></h3>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Quest Diagnostics
+                Giants Training Center, New Jersey<br /><br />Major throwback to
+                the Summer of 2023 when I got to meet Darren Waller, the Tight
+                End for the New York Giants! I've been a fan of the team since I
+                was 3 years old, so going to their preseason open practice and
+                meeting a bunch of players was an exciting and great experience!
+              </p>
+              <a href="https://www.instagram.com/anujpxtel.13/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work0">
+            <img src="images/sand.png" />
+            <div class="layer0">
+              <h3>Traveling <i class="fa-solid fa-plane-departure"></i></h3>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Jockey's Ridge State
+                Park, North Carolina<br /><br />This picture was taken in the
+                Summer of 2022, after finishing my sophomore year of college. My
+                friends and I took a trip down to North Carolina where we spent
+                the weekend in The Outer Banks!
+              </p>
+              <a href="https://www.instagram.com/anujpxtel.13/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- Portfolio Section ---------------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/stock.png" />
+            <div class="layer">
+              <h3>Equitable Stock Portfolio</h3>
+              <p>
+                Leveraging real-time financial data from the IEX Cloud API, I
+                engineered an automated system with an interactive user
+                interface, enabling investors to dynamically tailor their
+                portfolios. Employing efficient batch API calls to minimize
+                latency by 99% and leveraging Pandas for robust data
+                manipulation, the project delivers a transformative experience
+                in crafting portfolios.
+              </p>
+              <a href="https://github.com/asxp26/Equitable-Stock-Portfolio"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/chess.png" />
+            <div class="layer">
+              <h3>Chess Game</h3>
+              <p>
+                Developed an immersive Chess Game using Java, combining my
+                passion for programming and chess. Implemented complex
+                algorithms to enforce game rules and created a user-friendly
+                interface for seamless gameplay. Showcased skills in
+                inheritance, interfaces, OOP, algorithm design, UI, error
+                handling, and problem-solving.
+              </p>
+              <a href="https://github.com/asxp26/Chess-Game"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/spotify.png" />
+            <div class="layer">
+              <h3>Spotify Controller App</h3>
+              <p>
+                Programmed a robust web-based Spotify Controller App using
+                HTML/CSS and JavaScript, allowing users to control playback and
+                manage playlists. Integrated with the Spotify API, the app
+                features user authorization, device selection, and playback
+                control, offering a visually appealing and responsive interface.
+              </p>
+              <a href="https://github.com/asxp26/Spotify-Controller-App"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/asxp26" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!---------------------- Contact Section ---------------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> anujpatel1326@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 732-881-0925</p>
+            <div class="social-icons">
+              <a href="https://github.com/asxp26"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/anujpatel13"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/anujpxtel.13/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+            <a href="images/AnujPatel-Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 | Anuj Patel 💎 | All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx2ofZmZqyAzVDOldWPjxESnnzR1ivZ1HQhrNlRi_fojW1hSoGHQ0AHG2GkkWYMIqfg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
