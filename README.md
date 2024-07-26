@@ -1,6 +1,6 @@
 # Anuj's Personal Portfolio
 
-Anuj's Personal Portfolio is a comprehensive showcase of my skills, experiences, and projects, designed to provide a detailed insight into my professional journey. The website is user-friendly, responsive, and visually appealing.
+My Personal Portfolio is a comprehensive showcase of my skills, experiences, and projects, designed to provide a detailed insight into my professional journey. The website is user-friendly, responsive, and visually appealing.
 
 ## Features
 - Dynamic Text and Interactive Elements: Smooth animations and dynamic text to engage users.
